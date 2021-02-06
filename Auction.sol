@@ -40,9 +40,9 @@ contract Auction {
         //Part 1 Task 2. Initialize two items with at index 1 and 2. 
         // ** Start code here. 2 lines approximately. **/
         items[1] = Item(1, emptyArray);
-        items[2] = Item(2, emptyArray);
-        //items[2] = Item(2, new uint[](5));
+        items[2] = Item({itemId:2,itemTokens:emptyArray});
         //** End code here**/
+        //items[2] = Item(2, new uint[](5));
     }
     
 
@@ -132,8 +132,7 @@ contract Auction {
             you need to assign the address of the person obtained above to winners[id] */
 
             // ** Start coding here *** 1 line approximately.
-            
-                    
+            winners[id] = bidders[winnerId].addr;
             //** end code here*
                 
             }
