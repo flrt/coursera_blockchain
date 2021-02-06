@@ -106,7 +106,7 @@ contract Auction {
     //Hint : Use require to validate if "msg.sender" is equal to the "beneficiary".
     modifier onlyOwner {
         // ** Start code here. 2 lines approximately. **
-        
+        require(msg.sender==beneficiary);
         _;
         //** End code here. **
     }
